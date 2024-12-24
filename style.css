@@ -1,312 +1,85 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&family=Sevillana&display=swap');
-
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-.run{
-  font-family: "Leckerli One", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ok{
-
-
-    font-family: "Salsa", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.c3{
-  width: 70px;
-}
-  .font-1 {
-    font-family: "Sevillana", cursive;
-    font-weight: 800;
-    font-style: normal;
-    color: black !important;
-    font-size: x-large;
-  }
-  .font-2 {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-   
-  }
-  
-  .font-22 {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .font-222 {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-
-
-#navbar {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-brand {
-    color: white; /* Change color as needed */
-}
-
-.navbar-nav .nav-link {
-    color: white; /* Change color as needed */
-}
-
 .content {
-    padding-top: 70px; /* Adjust based on navbar height */
-    background-image: url('./img/bg.webp'); /* Change the path to your image */
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh; /* Adjust as needed */
+  padding-top: 70px; /* Adjust based on navbar height */
+  background-image: url('./img/bg.webp'); /* Change the path to your image */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; /* Adjust as needed */
 }
 .type{
-    justify-content: center;
-    display: flex;
-    align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 /* text */
 .txt h1 {
-    font-size: 100px;
-    padding: 0.5rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    overflow: hidden;
-    color: #ffffff;
-    text-shadow: #dd7732;
-  }
-  .txt h1 span.typed-text {
-    font-weight: normal;
-    color: #dd7732;
-  }
-   .txt h1 span.cursor {
-    display: inline-block;
-    background-color: #ccc;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-  }
-  .txt h1 span.cursor.typing {
-    animation: none;
-  }
-  @keyframes blink {
-    0%  { background-color: #ccc; }
-    49% { background-color: #ccc; }
-    50% { background-color: transparent; }
-    99% { background-color: transparent; }
-    100%  { background-color: #ccc; }
-  }
-
-
-
-
-.smoke{
-  /* background-image: url(./img/IMG_9774_1200x1200-removebg-preview.png); */
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(9, 9, 9));
+  font-size: 100px;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  color: #ffffff;
+  text-shadow: #dd7732;
 }
-
-
-body{
-  overflow-x: hidden;
+.txt h1 span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
 }
-/* .img {
- 
-    filter: gray; 
-    -webkit-filter: grayscale(1);
-    -webkit-transition: all .8s ease-in-out;  
-  }
-.img:hover {
-  filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01);
-  } */
-.img:hover{
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-/* =====================================    transition start =====================================*/
-
-/* .transition-left {
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-}
-
-.transition-right {
-  transform: translateX(100%);
-  transition: transform 0.5s ease;
-}
-
-.transition-left.active, .transition-right.active {
-  transform: translateX(0);
-} */
-.transition-top {
-  transition: transform 3s ease;
-  transform: translateY(-100%);
-}
-
-.transition-right {
-  transition: transform 3s ease;
-  transform: translateX(100%);
-}
-
-.transitioned {
-  transform: translateY(0) !important;
-  transform: translateX(0) !important;
-}
-
-
-.transition-left {
-  opacity: 0;
-  transition: opacity 5s ease;
-}
-
-.transition-left.active {
-  opacity: 1;
-}
-
-
-
-/* gallery css start */
-  :root {
-    --lightbox: rgb(0 0 0 / 0.75);
-    --carousel-text: #fff;
-  }
-
-body {
-  margin: 1.5rem 0 3.5rem;
-}
-
-@keyframes zoomin {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.gallery-item {
-  display: block;
-}
-
-.gallery-item img {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.2s;
-}
-
-.gallery-item:hover img {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
-}
-
-.lightbox-modal .modal-content {
-  background-color: var(--lightbox);
-}
-
-.lightbox-modal .btn-close {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  font-size: 1.25rem;
-  z-index: 10;
-  filter: invert(1) grayscale(100);
-}
-
-.lightbox-modal .modal-body {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-
-.lightbox-modal .lightbox-content {
-  width: 100%;
-}
-
-.lightbox-modal .carousel-indicators {
-  margin-bottom: 0;
-}
-
-.lightbox-modal .carousel-indicators [data-bs-target] {
-  background-color: var(--carousel-text) !important;
-}
-
-.lightbox-modal .carousel-inner {
-  width: 75%;
-}
-
-.lightbox-modal .carousel-inner img {
-  animation: zoomin 10s linear infinite;
-}
-
-.lightbox-modal .carousel-item .carousel-caption {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 2rem;
-  background-color: var(--lightbox);
-  color: var(--carousel-text) !important;
-}
-
-.lightbox-modal .carousel-control-prev,
-.lightbox-modal .carousel-control-next {
-  width: auto;
-}
-
-.lightbox-modal .carousel-control-prev {
-  left: 1.25rem;
-}
-
-.lightbox-modal .carousel-control-next {
-  right: 1.25rem;
-}
-
-@media (min-width: 1400px) {
-  .lightbox-modal .carousel-inner {
-    max-width: 60%;
-  }
-}
-
-[data-bs-theme = "dark"] .lightbox-modal .carousel-control-next-icon,
-[data-bs-theme = "dark"] .lightbox-modal .carousel-control-prev-icon {
-    filter: none;
-}
-
-.btn-fullscreen-enlarge,
-.btn-fullscreen-exit {
-  position: absolute;
-  top: 1.25rem;
-  right: 3.5rem;
-  z-index: 10;
-  border: 0;
-  background: transparent;
-  opacity: .6;
-  font-size: 1.25rem;
-}
-
-.bi {
+ .txt h1 span.cursor {
   display: inline-block;
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.035em;
-  fill: currentcolor;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.txt h1 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
 
+.logo{
+  width: 90px;
+}
+p{
+  text-align: justify;
+}
 a{
-  text-decoration: none !important;
-  
+  text-decoration: none;
+}
+.vas{
+  background-image: url(./henna/blur.jpg);
+  height: 200px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.blurr{
+  backdrop-filter: blur(40px);
+}
+
+
+.leg{
+  background-image: url(./henna/leg.jpg);
+  height: 200px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+@media only screen and (max-width: 768px) {
+.txt h1{
+  font-size: 40px !important;
+}
 }
